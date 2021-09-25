@@ -10,6 +10,19 @@ public class Solution {
         bird.setAnimalFeatures(new BirdFeatures());
         bird.canSing();
 
+        Duck duck=new Duck();
+        duck.setAnimalFeatures(new DuckFeatures());
+        duck.setAnimalSound(new DuckSound());
+        duck.getAnimalSound();
+        duck.canSwim();
+
+        Chicken chicken=new Chicken();
+        chicken.setAnimalFeatures(new ChickenFeatures());
+        chicken.setAnimalSound(new ChickenSound());
+        chicken.getAnimalSound();
+        chicken.canFly();
+
+
 
 
 
