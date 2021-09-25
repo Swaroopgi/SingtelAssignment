@@ -1,5 +1,7 @@
 package com.singtel.Assignment;
 
+import java.util.Arrays;
+
 public class Solution {
 
     public static void main(String a[])
@@ -39,7 +41,10 @@ public class Solution {
        clownFish.color();
        clownFish.habit();
 
-
+       Caterpillar caterpillar=new Caterpillar();
+       caterpillar.setAnimalFeatures(new CaterpillarFeature());
+       caterpillar.canFly();
+       caterpillar.canSing();
 
 
 
