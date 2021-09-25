@@ -7,7 +7,9 @@ public class Solution {
         Bird bird=new Bird();
         bird.fly();
         bird.walk();
-        //bird.swing();
+        bird.setAnimalFeatures(new BirdFeatures());
+        bird.canSing();
+
 
 
 
