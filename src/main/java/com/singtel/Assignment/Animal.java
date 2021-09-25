@@ -35,4 +35,9 @@ public class Animal {
         return animalSound.sound();
     }
 
+    public boolean haveAnimalFeatures()
+    {
+        return animalFeatures!=null;
+    }
+
 }

@@ -25,6 +25,7 @@ public class Solution {
         chicken.canFly();
 
         Roaster roaster=new Roaster();
+
         roaster.setAnimalSound(new RoasterSound());
         roaster.getAnimalSound();
 
@@ -45,6 +46,28 @@ public class Solution {
        caterpillar.setAnimalFeatures(new CaterpillarFeature());
        caterpillar.canFly();
        caterpillar.canSing();
+
+       Animal[] animals={duck,chicken,roaster,shark,clownFish,caterpillar};
+
+       int flyCount=0,singCount=0,swimCount=0,walkCount=0;
+        for (Animal animal:animals) {
+            if(animal.haveAnimalFeatures()) {
+
+                if (animal.canFly())
+                    flyCount++;
+                if (animal.canSing())
+                    singCount++;
+                if (animal.canSwim())
+                    swimCount++;
+                if (animal.canWalk())
+                    walkCount++;
+            }
+        }
+
+        System.out.println("Total Fly "+flyCount);
+        System.out.println("Total Sing "+singCount);
+        System.out.println("Total Swim "+swimCount);
+        System.out.println("Total walk "+walkCount);
 
 
 
