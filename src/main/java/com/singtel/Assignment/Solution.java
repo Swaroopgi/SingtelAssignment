@@ -22,6 +22,9 @@ public class Solution {
         chicken.getAnimalSound();
         chicken.canFly();
 
+        Roaster roaster=new Roaster();
+        roaster.setAnimalSound(new RoasterSound());
+        roaster.getAnimalSound();
 
 
 

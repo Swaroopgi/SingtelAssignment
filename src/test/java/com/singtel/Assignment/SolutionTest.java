@@ -9,12 +9,14 @@ public class SolutionTest {
     private Bird bird;
     private Duck duck;
     private Chicken chicken;
+    private Roaster roaster;
 
     @Before
     public void setup(){
         bird=new Bird();
         duck=new Duck();
         chicken=new Chicken();
+        roaster=new Roaster();
     }
     @Test
     public void question1()
@@ -30,6 +32,13 @@ public class SolutionTest {
         duck.setAnimalFeatures(new DuckFeatures());
         Assert.assertEquals("Quack ,quack",duck.getAnimalSound());
         Assert.assertTrue(duck.canSwim());
+    }
+
+    @Test
+    public void question3()
+    {
+        roaster.setAnimalSound(new RoasterSound());
+        Assert.assertEquals("Cock-a-doodle-doo",roaster.getAnimalSound());
     }
 
 }
