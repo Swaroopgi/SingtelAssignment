@@ -26,6 +26,20 @@ public class Solution {
         roaster.setAnimalSound(new RoasterSound());
         roaster.getAnimalSound();
 
+        Shark shark=new Shark();
+        shark.setFishQualities(new SharkFeature());
+        shark.size();
+        shark.color();
+        shark.habit();
+
+       ClownFish clownFish=new ClownFish();
+       clownFish.setFishQualities(new ClowFeature());
+       clownFish.size();
+
+       clownFish.color();
+       clownFish.habit();
+
+
 
 
 
